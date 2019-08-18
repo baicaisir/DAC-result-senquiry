@@ -1,5 +1,5 @@
 # @Time : 2019/6/18 15:39
-# @Author : 李俊华
+# @Author : 白菜先森
 # @File : DAC_result_senquiry.py 
 # @RSS ： https://blog.csdn.net/young_foryou/rss/list
 
@@ -8,7 +8,7 @@ driver = webdriver.Chrome()
 def dac():
     driver.get('http://211.166.76.62/2019cjfb/register/cjcx.jsp')
     driver.find_element_by_id('number').send_keys('201901802143')
-    driver.find_element_by_id('name').send_keys('崔恒')
+    driver.find_element_by_id('name').send_keys('xxx')
     a = input('输入验证码')
     driver.find_element_by_id('yznumber').send_keys(a)
     driver.find_element_by_xpath('//*[@id="PrintInfoForm"]/table[1]/tbody/tr/td/table[5]/tbody/tr/td/table[2]/tbody/tr/td[3]/table[2]/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[5]/td[2]').click()
